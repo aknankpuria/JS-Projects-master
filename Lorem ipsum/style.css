@@ -1,0 +1,44 @@
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+header .title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+#count {
+    width: 25px;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+
+#count::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.lorem-form label {
+    font-weight: bold;
+}
+
+.lorem-text p {
+    font-family: "comic sans ms";
+    text-align: justify;
+    padding: 0 15px 10px 15px;
+}

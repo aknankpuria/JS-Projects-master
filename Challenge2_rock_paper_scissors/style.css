@@ -1,0 +1,50 @@
+.container {
+    width: 65%;
+    margin: auto;
+}
+
+h2 {
+    font-family: "comic sans ms";
+    text-align: center;
+}
+
+#image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#remove {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    margin: 15px;
+}
+
+#image-container button {
+    cursor: pointer;
+    border: none;
+}
+
+#image-container button:hover {
+    box-shadow: 0 0 40px blueviolet;
+}
+
+.reload {
+    text-align: center;
+    padding: 20px;
+}
+
+.reload button {
+    height: 25px;
+    color: #fff;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 3px;
+}

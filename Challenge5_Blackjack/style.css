@@ -1,0 +1,76 @@
+.container {
+    width: 75%;
+    margin: auto;
+}
+
+.container > h2 , .container > h3{
+    text-align: center;
+    font-family: "comic sans ms";
+}
+
+.game-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 300px;
+    background-size: cover;
+    overflow: auto;
+}
+
+.game-container, .button-container {
+    background-image: url("assets/images/background.jpg");
+}
+
+.game-container div{
+    text-align: center;
+    flex: 1;
+    border-left: 1px solid black;
+    color: #fff;
+    text-align: center;
+}
+
+.game-container img {
+    width: 60px;
+    height: auto;
+    margin: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container button {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+    color: #fff;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    height: 25px;
+}
+
+table {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+table td, th {
+    width: 50px;
+    text-align: center;
+    border-left: 1px solid;
+    border-top: 1px solid;
+}
+
+thead th {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-top: none;
+}
+
+th:first-child, td:first-child {
+    border-left: none;
+}

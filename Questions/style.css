@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+.majorContainer {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+.minorContainer {
+    width: 400px;
+    margin-top: 10vh;
+}
+
+.minorContainer #title {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 40px;
+}
+
+.minorContainer .q {
+    font-family: "comic sans ms";
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 1px 3px 15px;
+    position: relative;
+
+    padding: 6px 0 6px 10px;
+    margin-bottom: 20px;
+}
+
+.minorContainer button {
+    position: absolute;
+    right: 10px;
+
+    font-weight: bold;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background-color: transparent;
+
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+}
+
+.minorContainer .q .a {
+    max-height: 0;
+    overflow: hidden;
+
+    transition: all 0.5s linear;
+}

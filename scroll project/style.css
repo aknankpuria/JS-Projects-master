@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+header #background-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -10;
+}
+
+header::after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -10;
+}
+
+.nav-container {
+    position: absolute;
+    width: 100%;
+    display: grid;
+    max-height: 200px;
+    transition: max-height 0.5s;
+}
+
+.nav-container #logo, .small-screen-nav #logo {
+    width: 75px;
+    padding: 10px 0 0 15px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    grid-column-start: 2;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 5px 5px 20px;
+    transition: all 0.5s;
+}
+
+.fixed-nav a {
+    color: #000;
+}
+
+.small-screen-nav {
+    max-height: 0;
+    display: grid;
+    overflow: hidden;
+    transition: max-height 1s linear;
+}
+
+.small-screen-nav #logo {
+    background-color: #fff;
+}
+
+.small-screen-nav #nav-toggle {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: 2px solid #000;
+    width: 70px;
+    height: 30px;
+    align-self: center;
+    margin-left: auto;
+    margin-right: 20px;
+    grid-column-start: 2;
+}
+
+.small-screen-nav #nav-toggle:hover {
+    color: #fff;
+}
+
+.small-screen-nav .small-screen-nav-links {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.small-screen-nav .small-screen-nav-links ul, .small-screen-nav .small-screen-nav-links li{
+    display: block;
+}
+
+.small-screen-nav .small-screen-nav-links li {
+    padding-bottom: 10px;
+    
+    transition: padding 0.5s;
+}
+
+.small-screen-nav .small-screen-nav-links li:hover {
+    padding-left: 15px;
+}
+
+.small-screen-nav .small-screen-nav-links li a {
+    color: black;
+    width: 100px;
+}
+
+a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+
+.title {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: all 0.5s;
+}
+
+.title h1 {
+    font-size: 40px;
+    margin: 15px;
+}
+
+button {
+    background-color: transparent;
+    color: #fff;
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+}
+
+button:hover {
+    background-color: #000;
+}
+
+article {
+    position: relative;
+    top: 100vh;
+}
+
+article h1 {
+    margin: 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+#about {
+    height: 100vh;
+}
+
+#services {
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+#tours {
+    height: 100vh;
+}
+
+.scroll-top-btn {
+    display: none;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 10;
+}
+
+.scroll-top-btn img {
+    width: 50px;
+    height: auto;
+    animation-name: myAnimation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes myAnimation {
+    from {
+        width: 50px;
+    }
+
+    to {
+        width: 75px;
+    }
+}
+
+footer {
+    position: relative;
+    background-color: rgb(73, 72, 72);
+    top: 100vh;
+    height: 100px;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+    padding-top: 40px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 550px) {
+    .nav-container {
+        display: none;
+    }
+
+    .small-screen-nav {
+        max-height: 250px;
+    }
+}

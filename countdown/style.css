@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.article-container {
+    width: 350px;
+    margin-left: 15px;
+}
+
+.time-left-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.time {
+    width: 50px;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(36, 20, 51);
+    display: block;
+}
+
+.time h4, .time h5 {
+    margin: 5px 0;
+}

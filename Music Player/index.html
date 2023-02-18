@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="main-container">
+    <div>
+        <div class="player-container">
+            <div class="info-container">
+                <p class="song-name"></p>
+                <div class="progress-container">
+                    <div class="progress"></div>
+                </div>
+            </div>
+
+            <div class="controls-container">
+                <div class="album-pic-container">
+                    <section class="circular-container">
+                        <img src="res/image/Harry Potter.jpg" alt="album img">
+                    </section>
+                </div>
+
+                <div class="btn-container">
+                    <button id="prev-btn">
+                        <img src="res/prevbtn.png" width="20px" alt="prevBtn">
+                    </button>
+
+                    <button id="playpause-btn">
+                        <img src="res/playbtn.png" width="20px" alt="playBtn">
+                    </button>
+
+                    <button id="next-btn">
+                        <img src="res/nextbtn.png" width="20px"alt="nextBtn">
+                    </button>
+
+                </div>
+            </div>
+        </div>
+        <div class="bottom-container">
+            <div class="volume-container">
+                <div class="volume"></div>
+                <i class="fa fa-volume-up" id="volume-icon" aria-hidden="true"></i>
+            </div>
+            <div class="queue-container">
+                <h4> up next </h4>
+                <div class="next-song-container">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

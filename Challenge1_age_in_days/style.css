@@ -1,0 +1,32 @@
+
+.container-1 {
+    width: 65%;
+    height: 90vh;
+    margin: auto;
+    margin-top: 50px;
+}
+
+h2 {
+    margin: initial;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.flex-box-1 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+}
+
+button {
+    color: #fff;
+    background-color: blueviolet;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    height: 25px;
+}
+
+button:hover {
+    background-color: black;
+}

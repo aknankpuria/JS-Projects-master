@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    background-color: bisque;
+}
+
+#navcontainer {
+    display: grid;
+    align-items: center;
+    box-shadow: 0px 4px 40px;
+    background-color: aqua;
+}
+
+ul {
+    padding: 0;
+    margin: 10px 0;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.title {
+    grid-column-start: 1;
+    color: red;
+}
+
+.title h1 {
+    margin: 0;
+    padding-left: 5px;
+    margin: 10px 0;
+}
+
+.navlinks {
+    grid-column-start: 2;
+}
+
+.smlinks {
+    grid-column-start: 3;
+}
+
+.smlinks a img{
+    transition: width 0.5s linear;
+}
+
+.smlinks a img:hover {
+    width: 30px;
+}
+
+.navbtn {
+    grid-column-start: 4;
+    display: none;
+}
+
+.ddcontent {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.5s;
+    background-color: blueviolet;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.ddcontent > ul li {
+    display: block;
+    padding-left: 10px;
+    line-height: 30px;
+    transition: all 0.5s;
+}
+
+.ddcontent .smlinks {
+    display: initial;
+}
+
+.ddcontent .smlinks li {
+    padding-left: 10px;
+}
+
+.ddcontent > ul li:hover {
+    padding-left: 25px;
+    color: wheat;
+}
+
+@media only screen and (max-width: 550px) {
+    .navlinks, .smlinks{
+        display: none;
+    }
+
+    .navbtn {
+        display: initial;
+        width: 40px;
+        margin-left: auto;
+        margin-right: 10px;
+        color: black;
+        background-color: transparent;
+        border: 2px solid #000;
+        border-radius: 5px;
+        transition-property: color, background-color;
+        transition-duration: 0.5s;
+    }
+}

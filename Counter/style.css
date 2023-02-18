@@ -1,0 +1,42 @@
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: "comic sans ms";
+}
+
+.counter {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.buttons button {
+    background-color: transparent;
+    border: 2px solid black;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+    font-weight: 600;
+}
+
+.buttons button:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+@media only screen and (max-width: 317px) {
+    .buttons {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}

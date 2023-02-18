@@ -1,0 +1,90 @@
+html {
+    overflow-y: scroll;
+}
+
+.preloader {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide-preloader {
+    z-index: -10;
+    visibility: hidden;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header #title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.major-container {
+    margin:auto;
+    max-width: 900px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    width: 400px;
+    margin: 0 20px 20px 0;
+    align-self: flex-start;
+
+    transition: all 0.5s;
+}
+
+.item-img {
+    width: 120px;
+    height: auto;
+
+    border: 2px solid orange;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.item-desc-container {
+    margin-left: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.item-name {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+
+.item-price {
+    position: absolute;
+    right: 0;
+    top: 4px;
+}
+
+.item-desc {
+    font-family: "comic sans ms";
+}
+
+.btn-container button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+
+    border: 2px solid #000;
+    border-radius: 5px;
+
+    transition: all 0.5s;
+}

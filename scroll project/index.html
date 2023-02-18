@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Scroll Project</title>
+</head>
+<body>
+    <header id="home">
+        <nav class="nav-container">
+            <img id="logo" src="res/logo.svg" alt="logo">
+            <ul class="nav-links">
+                <li><a href="#home" class="scroll-link">Home</a></li>
+                <li><a href="#about" class="scroll-link">About</a></li>
+                <li><a href="#services" class="scroll-link">Services</a></li>
+                <li><a href="#tours" class="scroll-link">Tours</a></li>
+            </ul>
+        </nav>
+        <nav class="small-screen-nav">
+            <img id="logo" src="res/logo.svg" alt="logo">
+            <button id="nav-toggle">Links</button>
+            <section class="small-screen-nav-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#tours">Tours</a></li>
+                </ul>
+            </section>
+        </nav>
+        <img id="background-img" src="res/backgroundImg.jpeg">
+        <section class="title">
+            <h1>SCROLL PROJECT</h1>
+            <p class="title-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+            <a href="#tours"><button>EXPLORE TOURS</button></a>
+        </section>
+    </header>
+    <article>
+        <section class="section" id="about">
+            <h1>ABOUT US</h1>
+            <p>Lorem, ipsum.</p>
+        </section>
+        <section class="section" id="services">
+            <h1>OUR SERVICES</h1>
+            <p>Lorem, ipsum.</p>
+        </section>
+        <section class="section" id="tours">
+            <h1>FEATURED TOURS</h1>
+            <p>Lorem, ipsum.</p>
+        </section>
+    </article>
+    <a href="#home" class="scroll-top-btn">
+        <img src="res/upArrow.png" alt="top">
+    </a>
+    <footer>
+        <p>copyright &copy; backroads trave tours company
+        <span id="date"></span>
+        .all rights reserved </p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

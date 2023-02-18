@@ -1,0 +1,73 @@
+body {
+    display: grid;
+    margin: 0;
+}
+
+.navbtn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: #000;
+
+    transition: all 0.5s;
+}
+
+.navcontainer {
+    grid-column-start: 1;
+    position: relative;
+    min-height: 222px;
+    width: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: skyblue;
+    border-radius: 0 10px 10px 0;
+    transition: width 0.5s;
+}
+
+.navcontainer .title h1 {
+    color: #ff0000;
+    white-space:nowrap;
+    padding-left: 10px;
+}
+
+.navlinks ul, .smlinks ul {
+    list-style: none;
+    padding: 0 0 0 10px;
+}
+
+.smlinks {
+    position: absolute;
+    bottom: 0;
+}
+
+.navlinks ul li {
+    line-height: 30px;
+    transition: all 0.5s;
+}
+
+.navlinks ul li:hover {
+    padding: 15px;
+    font-weight: bold;
+}
+
+.smlinks ul li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.smlinks ul li img {
+    transition: all 0.5s;
+}
+
+.smlinks ul li img:hover {
+    width: 30px;
+}
+
+h1 {
+    grid-column-start: 2;
+}
